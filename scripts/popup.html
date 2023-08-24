@@ -1,0 +1,29 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+<body>
+  <img src="/images/pro.png" id="logo">
+  <h1>Pro Pomodoro</h1>
+    <label class="switch">
+        <input type="checkbox" id="deep-work-toggle">
+        <span class="slider round"></span>
+    </label>
+    <div id="mas">
+      <span class="label">Deep Work</span>
+      <br>
+      <div id="timer">
+        <span id="minutes">00</span>:<span id="seconds">00</span>
+      </div>
+      <button id="start-button">Start</button>
+      <button id="stop-button">Stop</button>
+      <br>
+      <h3>Task List</h3>
+      <ul id="task-list">
+      </ul>
+      <input type="text" id="task-input" placeholder="Enter a task">
+      <button id="add-button">Add</button>
+    </div>
+    <script src="popup.js"></script>    
+</body>
+</html>

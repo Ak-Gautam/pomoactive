@@ -1,0 +1,190 @@
+/* body */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  width: 300px;
+  height: 400px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Insert the logo images/pro.png on the top left of the popup 64x64 <img src="images/pro.png" id="logo"> */
+#logo {
+  display: inline-block;
+  margin-left: 12px;
+  width: 64px;
+  height: 64px;
+  margin-bottom: 10px;
+  vertical-align: middle;
+}
+
+#mas {
+  margin: 0 auto; /* Center align horizontally */
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align vertically */
+  justify-content: center; /* Center align horizontally */
+}
+/* The h1 is on the right side of popup besides the logo */
+h1 {
+  display: inline-block;
+  color: #2196F3;
+  margin: 0;
+  margin-left: 10px;
+  font-size: 20px;
+  vertical-align: middle;
+}
+/* switch should be in next line */
+/* Everything from here should be center aligned */
+
+.switch {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 11px;
+}
+
+.slider.round:before {
+  border-radius: 7px;
+}
+/* Center align the label */
+.label {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 10px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+button {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  border-style: none;
+  background-color: #2196F3;
+  color: white;
+}
+/* Start button and stop button are inline next to each other */
+#start-button {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#stop-button {
+  display: inline-block;
+}
+
+
+h3 {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  color: #ffc803;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+input[type="text"] {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin-top: 5px;
+  margin-right: 10px;
+  width: 80%; /* Adjust input width */
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#add-button{
+  margin-bottom: 12px;
+  background-color: #ffc803;
+}
+
+/* Add the CSS code for the timer */
+
+#timer {
+  font-family: Arial, sans-serif;
+  font-size: 32px;
+}
+
+/* Use different colors for different modes and periods */
+#timer.normal-work {
+  color: #30a0e0;
+}
+
+#timer.normal-break {
+  color:  #c858ba;
+}
+
+#timer.deep-work {
+  color: #ffc973;
+}
+
+#timer.deep-break {
+  color:  #c858ba;
+}
