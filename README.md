@@ -2,7 +2,7 @@
 
 ![Pro Pomodoro Logo](images/pro.png)
 
-**Pro Pomodoro** is a Chrome extension that helps you manage your time effectively using the Pomodoro technique. It provides two working modes: normal mode (25-minute work and 5-minute break) and deep work mode (90-minute work and 20-minute break). The extension also allows you to set and complete your top tasks during the work sessions.
+**Pro Pomodoro** is a Chrome extension that helps you manage your time effectively using the Pomodoro technique. It provides two working modes: normal mode (25-minute work and 5-minute break) and deep work mode (100-minute work and 20-minute break). The extension also allows you to set and complete your top tasks during the work sessions.
 
 ## Features
 
